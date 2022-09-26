@@ -1,0 +1,225 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+:root{
+   --color:#191919;
+    --color1:#C84B31;
+   --color2:#ECDBBA;
+    --color3:#2D4263;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+ body {
+    font-family: 'Fjalla One', sans-serif;
+   margin-top: 0;
+   margin-left:0;
+   padding:0;
+   width: 100%;
+   
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color: var(--color);
+    z-index: 1;
+    position: fixed;
+    border-bottom: 2px solid black;
+
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    
+
+}
+#navbar *{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 20px;
+}
+#navbar ul li a:hover{
+    background-color: var(--color3); 
+}
+
+main{
+    
+}
+
+section{ 
+    
+    width: 100%;
+}
+#welcome-section ,#contact{
+    background-color:var(--color3);
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+flex-direction: column;
+min-width: 460px;
+
+}
+
+#welcome-section h1{
+   
+    font-size: 70px;
+    font-weight: bolder;  
+}
+#welcome-section h2{
+    font-size: 70px;
+    font-weight: bolder;  
+}
+#welcome-section p{
+    font-size: 30px;
+    font-weight: bolder;}
+
+#projects{
+    
+        width: 100%;
+        height: auto;
+        background-color: var(--color1);
+       overflow-x: hidden;
+       
+    }
+    .sub{
+        margin: 0 auto;
+        text-align: center;
+        font-size:50px;
+    font-weight: bolder;
+    padding: 100px;
+    }
+
+    .proyect{
+        width: 350px;
+        height: 350px;
+        background-color: var(--color3);
+       display: flex;
+       flex-direction: column;
+        border:1px solid black;
+       
+    }
+    
+    .proyect h2{
+      background-color: var(--color1);;
+       text-align: center;
+       color: black;
+      margin: 0;
+      height: 50px;
+      background-color: var(--color2);;
+     
+    }
+
+    .proyect img{
+        width: 348px;
+        height: 300px
+
+    }
+.container{
+    margin: 0 auto;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 350px));
+    grid-gap:3rem;
+    max-width: 1280px;
+    justify-content: center;
+    
+    
+}
+
+#btn{
+    padding: 10px 80px;
+    background-color:var(--color3);
+    border: 2px solid black;
+    
+    display: block;
+    width: 300px;
+    text-align: center;
+    top:50px;
+    margin: 50px auto;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer{
+    height: 50px;
+    background-color: var(--color1);;
+    margin-bottom: -10;
+}
+
+footer p{
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top:10px;
+}
+
+#contact{
+    background-color:var(--color3);
+    height: 100vh;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+
+#contact h2{
+    font-size: 50px;
+    color :white;
+    text-align: center;
+}
+#contact p{
+    color :white;
+    font-size: 30px;
+    text-align: center;
+}
+.icons{
+    width: 70%;
+    height: 10%;
+    text-align:center;
+    
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+max-width: 980px;
+
+flex-wrap: wrap;
+}
+.icons a{
+    margin:0 auto;
+    
+  
+}
+.icons i{
+    color: white;
+    text-align:center;
+  
+    
+    
+   
+}
+.icons i:before{
+    padding: 10px;
+  
+}
+
+@media (max-width:560px)
+{
+
+    #navbar{
+        visibility: hidden;
+    }
+}

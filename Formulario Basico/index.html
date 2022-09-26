@@ -1,0 +1,86 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Registro de Actividades Deportivas</h1>
+      <p id="description">Polideportivo Diego Armando Maradona</p>
+      <form action="" id="survey-form">
+        <div class="formgroup">
+          <label for="" id="name-label"
+            >Nombre Completo
+            <input type="text" id="name" placeholder="Your Name" required />
+          </label>
+        </div>
+        <div class="formgroup">
+          <label id="email-label"
+            >Direccion Email
+            <input type="email" id="email" placeholder="Your email" required />
+          </label>
+        </div>
+        <div class="formgroup">
+          <label for="" id="number-label">
+            Edad
+            <input
+              type="number"
+              id="number"
+              placeholder="Edad"
+              min="0"
+              max="80"
+            />
+          </label>
+        </div>
+        <div class="formgroup">
+          <label for="dropdowm">Seleccione su genero</label>
+          <select name="dropdown " id="dropdown">
+            <option value="" selected disabled hidden>Genero</option>
+            <option value="javascript">Femenino</option>
+            <option value="php">Masculino</option>
+          </select>
+        </div>
+        <div class="formgroup">
+          <p>En que Turno prefiere asistir?</p>
+          <label class="optionRadio" for="">
+            <input name="radio " type="radio" value="a" />Mañana
+          </label>
+          <label class="optionRadio" for="">
+            <input name="radio " type="radio" value="b" />Tarde
+          </label>
+        </div>
+        <div class="formgroup">
+          <p>Seleccione los deportes de los cuales desea participar</p>
+          <label class="check" for="">
+            <input value="a" name="skills " type="checkbox" />Natacion
+          </label>
+          <label class="check" for="">
+            <input value="b" name="skills " type="checkbox" />Volley
+          </label>
+          <label class="check" for="">
+            <input value="c" name="skills " type="checkbox" />Futbol
+          </label>
+          <label class="check" for="">
+            <input value="d" name="skills " type="checkbox" />Tenis
+          </label>
+        </div>
+        <div class="formgroup">
+          <p>Comentarios adicionales:</p>
+          <textarea
+            name="text"
+            placeholder="Escriba su comentario aqui..."
+            id="textinput"
+            cols="80"
+            rows="10"
+          ></textarea>
+        </div>
+        <div class="formgroup">
+          <button id="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

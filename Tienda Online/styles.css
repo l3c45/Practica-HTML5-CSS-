@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;900&display=swap');
+:root{
+   --fondo:#FFF9D7;
+   --color:#EE81B3;
+  --color2: #810955;
+   --color3:#610C63;
+   --fuente:black;
+}
+*{
+    box-sizing: border-box;
+}
+body {
+   font-family: 'Exo', sans-serif;
+   margin: 0;
+   background: linear-gradient(45deg, var(--fondo) ,var(--color));
+   width: 100%;
+   position: relative;
+   min-width: 480px;
+   overflow-x: hidden;
+}
+#header{
+   top:02px;
+   border-radius: 20px;
+   padding: 2%;
+   position: fixed;
+   width: 100%;
+   height: 100px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color:var(--fondo);
+   z-index: 1;
+   font-weight: bold;
+   font-size:1.4rem;
+}
+img{
+  height: 150%;
+}
+#nav-bar{
+   width: 100%;
+   text-align: right;
+}
+#nav-bar ul li{
+   display: inline;
+   padding: 0 2%;
+}
+#nav-bar ul li a {
+   text-decoration: none;
+   color:var(--fuente)
+}
+#nav-bar ul li a:hover {
+   color:white;
+}
+main{
+   position: relative; 
+}
+section{
+   padding-top: 125px;
+   padding-bottom: 20px;
+   position: relative;
+}
+#tratamientos h1{
+     text-align: center;
+    position: relative;
+    font-size: 3rem;
+    padding-bottom: 40px;
+ }
+ .tratamiento{
+   margin:0 auto;
+   border-radius: 20px;
+   position: relative;
+   padding: 1%;
+   margin-bottom: 20px;
+   background-color:var(--color) ;
+   min-width: 840px;
+   width: 70%;
+ }
+ .tratamiento img{
+   height: 200px;
+   width: 200px;
+   border-radius:50%;
+ }
+ .tratamiento h3{
+   display: inline;
+   position: absolute;
+   top:0;
+   left: 40%;
+   font-size: 2rem;
+   text-align: center;
+ }
+ .tratamiento p{
+   position: absolute;
+   display: inline;
+   font-size: 1.3rem;
+   max-width: 65%;
+   left:30%;
+   top: 40%;
+   text-align: justify;
+}
+#precios{
+   display: flex;
+   text-align: center;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+.precio{
+   height: 350px;
+   width: 250px;
+   background-color: var(--color3);
+   border-radius: 20px;
+   position: relative;
+   margin: 10px;
+}
+ .price{
+   font-size: 2.5rem;
+   font-weight: bolder;
+   color:white;
+   margin: 10px 0;
+}
+.tiempo{
+   font-size: 3rem;
+   padding-bottom: 10px;
+   margin:0;
+}
+.info{
+   font-size: 1.5rem;
+   width: 200 px;
+}
+.btn{
+   border-radius: 5px;
+   background-color: #EE6983;
+   border:none;
+   width: 200px;
+   height: 50px;
+   font-size: 2rem;
+   bottom: 16px;
+   left:25px;
+   position: absolute;
+}
+.btn:hover{
+   border: 1px solid white;
+   color:white;
+}
+#opiniones{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+#opiniones h2{
+    font-size:3rem;
+}
+#precios2 h2{
+   font-size:3rem;
+   text-align: center;
+}
+#contacto{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+#contacto h2{
+    font-size:3rem;
+    text-align: center;
+}
+#form{
+   border-radius: 20px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-direction: column;
+   height: 500px;
+   padding: 50px 0;
+   background-color: var(--color);
+   width: 80%;
+   min-width: 480px;
+}
+#form label {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+input{
+   height: 50px;
+   width: 80%;
+}
+#submit{
+   border-radius: 5px;
+   background-color: #EE6983;
+   border:none;
+   width: 50%;
+   height: 50px;
+   font-size: 1.3rem;
+}
+#submit:hover{
+   border: 1px solid white;
+   color:white;
+}
+footer{
+   position: relative;
+   text-align: center;
+   padding: 20px 0;
+   height: 100px;
+   width: 100%;
+background-color: var(--fondo);
+}
+
+
+@media (max-width:800px) {
+   img{
+      height: 100%;
+    }
+   #nav-bar{
+    width: 100px;
+    position: absolute;
+    visibility: hidden;
+   }   
+   #header{
+      display: flex;
+      justify-content:center;
+   }
+   #tratamientos{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+   }
+   .tratamiento{
+      margin:0 auto;
+      border-radius: 20px;
+      position: relative;
+      padding: 1%;
+      margin-bottom: 20px;
+      background-color:var(--color) ;
+      width: 450px;
+      min-width: 400px;
+    }
+    .tratamiento img{
+     visibility: hidden;
+    }
+    .tratamiento h3{
+      display: inline;
+      position: absolute;
+      font-size: 1.5rem;
+      top:-27px;
+      left:30%;
+    }
+    .tratamiento p{
+    position: absolute;
+    display: inline;
+    font-size: 1.3rem;
+    max-width: 390px;
+    left: 40px;
+    top: 13%;
+    text-align: justify;
+   }
+ 
+}

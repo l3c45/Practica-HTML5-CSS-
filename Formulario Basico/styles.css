@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body {
+    margin:0;
+    position: relative;
+    background-image: url("https://diariondi.com/wp-content/uploads/2020/11/Polideportivo-Municipal-Tgto-scaled.jpg");
+    font-family:Poppins;
+    font-weight: 400;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+body::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(33, 100, 189, 0.8);
+   }
+.container{
+    position: relative;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;   
+}
+p , h1 {
+    margin-top: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    }
+#description{
+    font-size: 20px;
+}
+
+#survey-form {
+    width: 100%;
+    background-color:rgb(31, 55, 119) ;
+    border-radius: 15px;
+    padding-top: 2%;
+    margin-bottom: 0;
+}
+.formgroup{
+    padding-top: 2%;
+    padding-bottom: 2%;
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+}
+#name , #email , #number, #dropdown{
+    display: block;
+    height: 30px;
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:1rem;
+    margin-bottom: 2%;
+    border-radius: 5px;
+    
+}
+label {
+    text-align: center;
+    color:white;
+    font-size: 20px;
+}
+input::placeholder{
+    font-size: 22px;
+}
+.optionRadio , .check{
+    display: block;
+    text-align: left;
+    
+}
+
+#survey-form p {
+    color:white;
+    font-size: 20px;
+    text-align: left;
+}
+#textinput{
+    width: 100%;
+}
+#textinput::placeholder{
+    font-size: 22px;
+}
+textarea{
+    resize:none
+}
+#submit{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    width: 100%;
+    height: 40px;
+    border-radius: 0;
+    font-size: 25px;
+}
+
